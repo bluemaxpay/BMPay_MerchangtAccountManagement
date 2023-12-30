@@ -1,0 +1,307 @@
+"id","propay_status_code","propay_value","propay_notes","public_status_code"
+error_code_1,00,"Success","The API request was successful ** Also indicates approval when returned by transaction processing  methods**"
+error_code_2,01,"Refer to issuer","The transaction was blocked by the card holder’s credit card  company. The card holder will need to call the number on the back of the card to find out why."
+error_code_3,02,"Refer to issuer","The transaction was blocked by the card holder’s credit card  company. The card holder will need to call the number on the back of the card to find out why."
+error_code_4,03,"Invalid merchant ID","This response  should nev er appear for  a ProPay transaction, but is  sometimes  returned with other kinds of merchant accounts. Provided here merely  for reference."
+error_code_5,04,"Pick up card and deny transaction","There is a problem  with the card. Merchant should keep the card  and call the number on the back of the card to determine  the issue."
+error_code_6,05,"Do not honor","This is a generic  response  issued by banks when they don’t want to  tell you why they’v e declined a transaction."
+error_code_7,06,Customer requested stop to recurring payment,
+error_code_8,07,"Pick up card (fraud)"","There is a problem  with the card. The card has been marked for  fraud. Merchant should keep the card and call the number on the back of the card to determine  the issue."
+error_code_9,08,"Honor with ID only","Only honor the card with verification of card holder’s ID  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute determination of transaction state.**"
+error_code_10,09,"Unpaid items on customer  account",
+error_code_11,10,"Approved for partial amount","Partial approval  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute  determination of transaction state.**"
+error_code_12,11,"VIP approval","Partial approval  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute determination of transaction state.**"
+error_code_13,12,"Invalid transaction","Verify  that the credit card information  is input correctly  and run the  transaction again"
+error_code_14,13,"Amount  error",
+error_code_15,14,"Invalid card number","The card number that was entered is not valid. Verify  the card  number and re-enter"
+error_code_16,15,"No such issuer.","Could not route transaction"
+error_code_17,16,"Refund error",
+error_code_18,17,"Ov er limit","The credit card is ov er its allowed limit"
+error_code_19,19,"Boarded Incorrectly","Typically returned when ProPay has configured  something  incorrectly  on your account.  Often something  wrong with the  merchant’s address."
+error_code_20,20,"Invalid username","The value <userId />is already in use in ProPay’s system"
+error_code_21,21,"Invalid transType","Requested <transType /> method is not permitted for account"
+error_code_22,21,"Unable to back out transaction",
+error_code_23,22,"Invalid Currency Code","Verify  that the value for <currencyCode  /> is a valid  ISO 3 character currency  code"
+error_code_24,22,"Unable to contact issuing bank, Try Again","The issuing  bank could not be contacted or is not responding  during  the transaction. The cardholder should check the card information and try processing  again."
+error_code_25,23,"Invalid Account Type","Verify  the value for <accountType /> element  is valid"
+error_code_26,24,"Invalid Source Email","Verify  that the value for <sourceEmail  /> is valid email  format.  Value <sourceEmail  /> must be unique in ProPay system."
+error_code_27,25,"Invalid First Name","The value <firstName  /> cannot exceed 20 characters"
+error_code_28,25,"Invalid terminal",
+error_code_29,26,"Invalid M Initial","The value <mInitial /> cannot exceed 2 characters"
+error_code_30,27,"Invalid Last Name","The value <lastName /> cannot exceed 25 characters"
+error_code_31,28,"Invalid Address","Verify  the value <Addr /> is valid. Value cannot  exceed 100 characters.  P.O. Boxes are not allowed."
+error_code_32,28,"Update file temporarily  unavailable",
+error_code_33,29,"Invalid Apt Number","Verify  the value <aptNum /> is valid. Value cannot  exceed 100 characters."
+error_code_34,30,"Invalid city","The value <city /> cannot exceed 30 characters"
+error_code_35,31,"Invalid state","The value <state /> cannot exceed 3 characters. U.S.  state abbreviation values should contain only 2 characters."
+error_code_36,32,"Invalid Zip","Verify  the value for <Zip /> is valid"
+error_code_37,33,"Invalid Mail Address","Verify  the value <mailAddr /> is valid. Value cannot  exceed 100 characters."
+error_code_38,34,"Invalid Mail Apt","Verify  the value <mailApt /> is valid. Value cannot  exceed 100 characters"
+error_code_39,34,"Transaction cancelled","Fraud concern"
+error_code_40,35,"Invalid Mail City","The value <mailCity /> cannot exceed 30 characters"
+error_code_41,36,"Invalid Mail State","The value <state /> cannot exceed 3 characters. Note:  U.S. state abbreviation values should contain only 2 characters."
+error_code_42,37,"Invalid Mail Zip","Verify  the value for <mailZip /> is valid"
+error_code_43,38,"Invalid Day Phone","Verify  the value <DayPhone /> is valid. For USA and  CAN,  value must be 10 characters with no dashes."
+error_code_44,39,"Invalid Evening Phone","Verify  the value <ev enPhone /> is valid. For USA and  CAN,  value must be 10 characters with no dashes"
+error_code_45,40,"Invalid SSN","Verify  that the value for <ssn /> is valid. Must be 9  numerical  characters without dashes."
+error_code_46,41,"Invalid Date of Birth","Verify  that value <dob />is valid and follows ‘mm-dd-  yyyy’ format"
+error_code_47,41,"Lost card","Card has been marked  as lost. Fraud has been reported on the  account. Merchant should keep the card and call the number on the back of  the card to determine  the issue."
+error_code_48,42,"Invalid Receiving Email","Verify  that the value for <recEmail /> is valid email  format"
+error_code_49,43,"Invalid Known Account","Value for<knownAccount  /> should be “Yes” or “No”"
+error_code_50,43,"Stolen card","Card has been marked  as stolen. Fraud has been reported on the  account. Merchant should keep the card and call the number on the back of  the card to determine  the issue."
+error_code_51,44,"Invalid amount","Verify  the value <amount /> is being passed without  decimals  or other non-numerical  characters"
+error_code_52,44,"Pick up card",
+error_code_53,45,"Invalid inv Num","The value <inv Num /> cannot exceed 50 characters"
+error_code_54,46,"Invalid Routing Number","Verify  that the value <RoutingNumber /> is valid.  Cannot exceed 9 characters."
+error_code_55,47,"Invalid Account Number","Invalid Bank Account  Number"
+error_code_56,48,"Invalid ccNum","Verify  that the value for <ccNum /> element is valid.  Card numbers must pass Luhn check."
+error_code_57,49,"Invalid expDate","Verify  that the value for <expDate /> element  is valid  and follows  ‘mmdd’ format."
+error_code_58,50,"Invalid cvv2","Verify  the value <CVV2 /> is valid. Value should be 3 or  4 characters  in length."
+error_code_59,51,Invalid transNum  AND/OR  Unable to act perform  actions on transNum due to funding,"Verify  that the value <transNum /> is a valid numerical value, OR the requested action cannot be performed on the transaction."
+error_code_60,51,"Insufficient  funds","There are not enough available funds on the card to complete the  transaction  ** This is the most common  response  for a declined credit card**"
+error_code_61,52,"Invalid split Number",
+error_code_62,52,"No such account","No checking  account"
+error_code_63,53,"A ProPay account with this email  address already exists","Less common  than status 87 which is returned because  the email address Provided is already being used as the username  for an existing ProPay account."
+error_code_64,53,"No such account","No savings account"
+error_code_65,54,A ProPay account with this social  security number  already exists,"(Deprecated.)  ProPay now allows multiple  accounts to  exist with the same SSN."
+error_code_66,54,"Expired card","The card has expired"
+error_code_67,55,"The email address Provided does not correspond to a ProPay account.","Some older (no longer supported) integrations allowed  transactions to be processed  onto a ProPay account specified  v ia email.  (Deprecated)"
+error_code_68,55,"Incorrect PIN",
+error_code_69,56,Recipient’s email address shouldn’t have a ProPay  account and does,"(Deprecated)""
+error_code_70,56,"Invalid Card",
+error_code_71,57,"Cannot settle transaction because it already expired",
+error_code_72,57,"Bank does not allow this type of purchase","The card-issuing bank does not allow  this type of purchase on the  card. The card holder will need to call the number on the back of the card for  more information."
+error_code_73,58,"Credit card declined","The value of the responseCode  element will prov ide  info on the decline reason"
+error_code_74,58,Credit card network does not allow this  purchase.,"The credit card brand does not allow this kind of purchase (based  on the type of terminal  used)"
+error_code_75,59,"Invalid Credential or IP address not allowed","Verify  that the IP address that you are using has been  whitelisted by ProPay. Verify  that <certStr /> value is valid"
+error_code_76,59,"Credit card network does not allow this  purchase.","The credit card brand does not allow this kind of purchase (based  on the type of merchant you are)"
+error_code_77,60,"Credit card authorization timed out; retry at a later time","Try again later"
+error_code_78,61,"Amount  exceeds single transaction limit","Value <amount /> exceeds the amount allowed for  a  single  transaction. Contact your relationship manager if you need this increased"
+error_code_79,61,"Exceeds issuer withdrawal limit","The card cannot be used until the withdrawal limit has been  increased"
+error_code_80,62,"Amount  exceeds monthly volume limit","The ProPay account has processed  the maximum  amount allowed in a single  month. Contact your relationship manager if you need this limit  increased."
+error_code_81,62,"Issuer does not allow this card to be charged for your business.","The card cannot be used to purchase from  your business. The credit  card company does not allow purchases from  your business type for this card."
+error_code_82,63,"Insufficient  funds in account","There are not enough funds"
+error_code_83,63,"Security Violation",
+error_code_84,64,"Ov er credit card use limit",
+error_code_85,65,"Miscellaneous  error","General error;  report the issue to ProPay"
+error_code_86,65,"Activ ity limit exceeded",
+error_code_87,66,"ProPay account requires  Additional Rev iew","Developer should display a descriptive message  that  guides a new user to fill out ProPay exceptions form and submit it. See notes below."
+error_code_88,67,"Unauthorized serv ice requested","The acting entity or account is not configured  to  perform  the requested action."
+error_code_89,68,"Account  not affiliated","The action requested requires  that the account share  the same affiliation  as the requesting credential"
+error_code_90,69,"Duplicate invoice number (The same card was  charged for the same amount with the same invoice number (including blank invoices) in a 1 minute period.  Details about the original transaction are included whenever a 69 response  is returned.  These details include a repeat of the auth code, the original AVS
+response, and the original CVV response.)","Duplicate <inv Num /> element  value. (The same card  was charged for  the same amount with the same  invoice number (including  blank invoices) in a defined period.  Details about the original  transaction are  included whenever a 69 response  is returned.  These details include a repeat of the auth code, the original
+AVS response, and the original CVV response.)"
+error_code_91,70,"Duplicate external ID","<ExternalId /> values must be unique per affiliation"
+error_code_92,71,"Account  previously set up, but problem  affiliating  it with  partner",
+error_code_93,72,"The ProPay Account  has already been upgraded to a  Premium  Account",
+error_code_94,73,"Invalid Destination Account","Verify  that the value <RecAccntNum  /> is a valid  ProPay account."
+error_code_95,74,"Account  or Trans Error",
+error_code_96,75,"Money already pulled","The funds have already been pulled"
+error_code_97,75,"PIN tries exceeded",
+error_code_98,76,"Not Premium (used only for  push/pull transactions)",
+error_code_99,76,"Unable to locate account",
+error_code_100,77,"Empty results",
+error_code_101,77,"Duplicate reversal or duplicate transaction",
+error_code_102,78,"Invalid Authentication","Authentication credentials  are not valid"
+error_code_103,78,"Account  not recognized",
+error_code_104,79,"Generic account status error","Contact ProPay Customer  Serv ice"
+error_code_105,80,"Invalid Password","Password is not valid",
+error_code_106,80,"Invalid Date",
+error_code_107,81,"Account  Expired","The ProPay account has expired. Contact your  relationship manager",
+error_code_108,81,"Cryptographic error",
+error_code_109,82,"Invalid User ID","The value <userId/> is not a valid ProPay userId"
+error_code_110,82,"Invalid CVV",,
+error_code_111,83,"Batch Trans Count Error",,
+error_code_112,83,"Cannot verify the PIN",,
+error_code_113,84,"Invalid Begin Date","Verify  the value <beginDate />. Must follow  format  ‘mm-dd-yyyy’. BeginDate  cannot be greater  than End Date."
+error_code_114,85,"Invalid End Date","Verify  the value <endDate />.Must follow  format ‘mm-  dd-yyyy’. EndDate cannot be greater than Begin Date."
+error_code_115,85,"Card okay on verification request","Can all in for  manual approval and enter auth code if your system  allows.  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute determination of transaction state.**"
+error_code_116,86,"Invalid External ID",
+error_code_117,86,"Cannot verify PIN",
+error_code_118,87,"Duplicate User ID","Developer should display descriptive response that the  email is already in use. See notes below."
+error_code_119,88,"Invalid track 1",
+error_code_120,89,"Invalid track 2",
+error_code_121,90,"Transaction already refunded","The transaction has already been refunded and  cannot be refunded again"
+error_code_122,91,"Duplicate Batch ID",
+error_code_123,91,"Issuer or switch unavailable",
+error_code_124,92,"Duplicate Batch Transaction",
+error_code_125,92,"Unable to route transaction",
+error_code_126,93,"Batch Transaction amount error",
+error_code_127,93,"Cannot complete  transaction.","The transaction cannot be completed. The customer  will need to  call the number on the back of the card to determine the issue."
+error_code_128,94,"unavailable Tier","The value <tier/> is not available for signup. Verify  the  Previously assigned tiers."
+error_code_129,94,"Duplicate transaction",
+error_code_130,95,"Invalid Country Code","The value <country/> is not valid. Value should be ISO  3166 standard 3 character country codes."
+error_code_131,95,"Misc. Error  Transaction failure","May be due to input data.  See details of <Response> tag."
+error_code_132,96,"Invalid PIN",
+error_code_133,96,"Issuer system malfunction  or timeout.",
+error_code_134,97,"Account  created in documentary status","The account must be validated to be activated"
+error_code_135,97,"approved for a lesser  amount.","ProPay will not settle and consider this a decline."
+error_code_136,98,"Account  created in documentary status, and must be  paid for","The account must be validated and paid for to be  activated"
+error_code_137,98,"Failure HV","Merchant boarding configuration  error"
+error_code_138,99,"Account  created successfully,  but must be paid for.","The account must  be paid for to be activated"
+error_code_139,99,Generic decline or unable to parse issuer  response  code.,"Additional data may be returned in the <Response> tag for  International merchants"
+error_code_140,100,"Transaction Already  Refunded","The transaction has already been refunded and  cannot be refunded again"
+error_code_141,101,"Refund Exceeds Original Transaction","The refund amount is greater than the original  transaction amount."
+error_code_142,101,"Decline","Generally insufficient  funds or incorrect  card data supplied, for  example, expiry date or security code."
+error_code_143,102,"Invalid Payer Name","The value <payerName /> is not valid."
+error_code_144,102,"Referral  B–Contact Authorization  Center","Usually treated as a standard decline for  Ecommerce  systems,  the  transaction can still be processed using a Manual request once an authorization code is obtained"
+error_code_145,103,"Transaction does not meet  date criteria",
+error_code_146,103,Referral  A - The card has been reported lost or stolen,"The card has been reported lost or stolen.  Usually treated as a  standard decline for  ecommerce  systems."
+error_code_147,104,Transaction could not be refunded due to current  transaction state.,
+error_code_148,105,"Direct  deposit account not specified",
+error_code_149,106,"Invalid SEC code","Verify  that the value <StandardEntryClassCode /> is  valid. Cannot exceed 3 characters. Valid values are: CCD, PPD."
+error_code_150,107,"Invalid Account Name (ACH  account)"","Verify  that the value <accountName /> is valid.  Cannot exceed 32 characters."
+error_code_151,108,"Invalid x509 certificate",
+error_code_152,109,"Invalid value for require  CC refund","The value for <requireCCRefund /> is not valid. Value  should be Y or N"
+error_code_153,110,"Required field  is missing","Returned for  edit ProPay account.  See Response  element for field  name  Returned if account edit was attempted on an account not belonging  to the affiliation."
+error_code_154,111,"Invalid EIN","Verify  the <EIN /> element  value is valid. See  www.irs.gov for valid values."
+error_code_155,112,"Invalid business legal name (DBA)"","<BusinessLegalName  /> is required for  business  account type signups."
+error_code_156,113,"One of the business legal  address fields  is Invalid",
+error_code_157,114,"Business  (legal) city is Invalid","The value <BusinessCity  /> cannot exceed 30  characters"
+error_code_158,115,"Business  (legal) state is Invalid","The value <BusinessState /> cannot exceed 3  characters. For  a U.S. state, follow  standard 2 character abbreviation."
+error_code_159,116,"Business  (legal) zip is Invalid","Verify  that the value <BusinessZip /> is valid. Cannot  exceed 9 characters."
+error_code_160,117,"Business  (legal) country is Invalid","The value <BusinessCountry  /> cannot exceed 3  characters. Should follow  standard 3 character country code format."
+error_code_161,118,"Mailing address Invalid",
+error_code_162,119,"Business  (legal) address is Invalid",
+error_code_163,120,"Incomplete business address",
+error_code_164,121,"Amount  Encumbered by enhanced Spendback",
+error_code_165,122,"Invalid encrypting dev ice type","Verify  that the value <encryptingDev iceType /> is valid"
+error_code_166,123,"Invalid key serial number","Verify  that the value <keySerialNumber  /> is valid.  Value is obtained from  the hardware dev ice."
+error_code_167,124,"Invalid encrypted track data","Verify  that the value <encryptedTrackData /> is valid"
+error_code_168,125,You may not transfer money between these two  accounts.,
+error_code_169,126,"Currency code not allowed for  this transaction","Value <currencyCode  /> must be an allowed currency  for the merchant account"
+error_code_170,127,"Currency code not permitted for  this account","Value <currencyCode  /> must be an allowed currency  for the merchant account"
+error_code_171,128,"Requires Additional Validation",
+error_code_172,129,"Multicurrency processing  is not allowed for  the account","This account cannot process additional currencies"
+error_code_173,130,Multicurrency processing  is not supported for this bank  processor,
+error_code_174,131,"Capture amount exceeds allowed amount","Capture <amount /> value cannot be more  than the  initial authorization amount"
+error_code_175,132,Account  setup does not allow capture for  amount  greater  than authorization,"Capture <amount /> value cannot be more  than the  initial authorization amount"
+error_code_176,133,"Threat Metrix risk denied (no responseCode  is returned)"",
+error_code_177,134,"Threat Metrix Invalid SessionId",
+error_code_178,135,"Threat Metrix Invalid Account configuration","Contact ProPay Risk Department"
+error_code_179,136,"External Payment Method Not Provided",
+error_code_180,137,"External Payment Provider not Provided",
+error_code_181,138,"External Payment Identifier not Provided",
+error_code_182,139,"External Payment Provider not valid",
+error_code_183,140,"External Payment Method Provided",
+error_code_184,141,"Inactive or blocked MCC Code","Unable to use passed value <MCCCode /> due to the  MCC Code being blocked  or inactive with the card brands"
+error_code_185,142,Invalid MCC Code  Non-numeric  or not in ProPay® database,"Verify  that the value <MCCCode /> is valid. Value  cannot exceed 4 characters. Value must be numerical."
+error_code_186,143,"Gross settle:  Invalid credit card information","Verify  the value <GrossSettleCreditCardNumber  /> is  valid. Cannot exceed 16 characters and must pass Luhn check."
+error_code_187,144,"Gross settle:  Invalid billing information",
+error_code_188,145,Gross settle:  no billing information  was included with  the payment info,
+error_code_189,146,"Gross settle:  error setting  up billing information",
+error_code_190,147,"Gross settle:  Tier does not support gross  settlement","The tier Provided as <tier /> element  has not been  configured  to support gross  settlement"
+error_code_191,148,"ExternalPaymentMethodIdentifier Invalid","Verify  that the value  <externalPaymentMethodIdentifier /> is valid. Must be a valid Visa Checkout  payment identifier."
+error_code_192,149,"Invalid DoingBusinessAs","Verify  <DoingBusinessAs  /> element  value is valid."
+error_code_193,150,"Invalid Serv ice Setting","One or more  request tags contain Invalid data."
+error_code_194,151,"Amex  Enhanced Account  Not Configured",
+error_code_195,152,"Bad Request","The request has extra tags which are not required."
+error_code_196,153,"Invalid Payment Type","The payment type is not valid."
+error_code_197,154,"Invalid Significant Owner Percentage","The Significant Owner Percentage value Provided is  Invalid. Check the </SignificantOwnerPercentage> tag."
+error_code_198,155,"Invalid Significant Owner Date Of Birth","The Significant Owner Date of Birth Provided is Invalid.  Check the </SignificantOwnerDateofBirth>  tag."
+error_code_199,156,"Invalid Significant Owner SSN","The Significant Owner Social Security Number Provided  is Invalid. Check the </SignificantOwnerSSN> tag."
+error_code_200,157,"Invalid Notification Email","The Notification  Email Provided is Invalid. Check the  </NotificationEmail>  tag."
+error_code_201,158,"Invalid Beneficial Owner Data","Beneficiary  Owner Data Provided in Signup Request is  Invalid, all Owner details Provided are mandatory and should be valid."
+error_code_202,159,"Invalid Beneficial Owner Count","Beneficiary  Owner Count Provided in Signup Request is  Invalid. Owner count  Provided should be less than 6 and should not be greater  than the list of Owners data Provided in request."
+error_code_203,160,"Invalid card holder billing name","The cardholder billing last name doesn't match what is  sav ed for the ProPay account"
+error_code_204,161,"Invalid card for fast fund","The card Provided for fast fund is Invalid."
+error_code_205,162,"Transaction declined","The transaction is declined by v isa direct."
+error_code_206,163,"Invalid card type","The card type is Invalid."
+error_code_207,164,"Flash fund not enabled","The flash fund attribute is not enabled for  merchant."
+error_code_208,165,"Missing required flash fund data","The required flash fund data is missing  in request."
+error_code_209,166,"Serv ice unavailable","The Visa direct Rest serv ice is unavailable."
+error_code_210,167,"Account  not registered","The v isa direct account is not registered."
+error_code_211,168,"Invalid Document Name","The uploading document name is not valid."
+error_code_212,169,"Invalid Document Type","The uploading document type is not valid."
+error_code_213,170,"Invalid Document","The uploading document is not valid."
+error_code_214,171,"Invalid Transaction Reference  Number","The transaction reference  number is not valid."
+error_code_215,172,"Invalid card holder name","The card holder name is Invalid."
+error_code_216,173,"Invalid Referrer URL","URL passed for single-sign-on  not properly formatted"
+error_code_217,174,"Invalid IP Address","IP address passed for  single-sign-on  not properly  formatted."
+error_code_218,175,"Invalid subnet mask","Subnet mask passed for single-sign-on  not properly  formatted."
+error_code_219,176,"Invalid Tip Amount","Invalid tip amount"
+error_code_220,178,"Invalid Moto e-commerce  indicator","Invalid moto e-commerce  indicator"
+error_code_221,179,"Invalid Account Source","Invalid account source"
+error_code_222,180,"Invalid approval Status","Invalid approval status"
+error_code_223,181,"Invalid Acquirer Reference  Number","Invalid acquirer reference  number"
+error_code_224,182,"Invalid Card Present Type Id","Invalid card present type id"
+error_code_225,183,"Invalid Cardholder Identity Id","Invalid cardholder identity id"
+error_code_226,184,"Invalid Cardholder Address","Invalid cardholder address"
+error_code_227,185,"Missing Required Signup Data","One of the fields  specifically  required for your program  is missing  from  your signup request."
+error_code_228,186,"Invalid CPS Merit Indicator","Invalid CPS merit indicator"
+error_code_229,187,"Invalid merchant descriptor","Formatting  rule problem with dynamic merchant  descriptor."
+error_code_230,189,"Invalid Document Category","Refer to the ProPay XML API manual for valid values for  the DocCategory  element for transType 47."
+error_code_231,190,"Daily Transaction Limit Exceeded","Daily transaction limit has been exceeded"
+error_code_232,191,"Invalid Comment","Value of Comment1  and/or Comment2  fields  (if any),  should be between 1-120 char, alphanumeric with period, comma,  hyphen allowed"
+error_code_233,192,"Invalid Account Credit Limit","Invalid account credit limit"
+error_code_234,193,"Invalid Batch Request","The batch request for  Direct Ledger  does not have any  data to process"
+error_code_235,194,"Incomplete Batch Request","The batch request for  Direct Ledger  has few Invalid  data items"
+error_code_236,195,"Batch In Progress","The Direct  Ledger Entry batch is currently in progress"
+error_code_237,200,"No Transfer Schedule For Account","The Visa Direct  Serv ice indicates that the account  doesn’t have an account transfer schedule"
+error_code_238,201,"Invalid Quasi Cash Indicator","The value for <isquasicash/> is not valid. Value should  be Y or N"
+error_code_239,202,"DTE Partner Not Set","The affiliation  submitting the DTE transaction doesn’t  have a DTE partner type set."
+error_code_240,203,"Invalid Time Zone Data","The Time Zone data required for  a Portico  account is  missing  or incorrectly  formatted."
+error_code_241,204,"Invalid Dev ice Request Format","Indicates that the sign up request with dev ice(s) is in  Invalid format."
+error_code_242,205,"Partial Success Partner Dev ice Payment Failed","Indicates the signup was successful  but payment for  partner dev ices failed."
+error_code_243,206,"Invalid Quantity","Indicates that the quantity of dev ices ordered is not  valid."
+error_code_244,207,"Missing Dev ice Name","Dev ice name is required"
+error_code_245,208,"Invalid dev ice name","Dev ice name is Invalid. The name must match a pre-  configured  name set on the tier."
+error_code_246,209,"Invalid Office Key","Indicates that the Office  Key passed is Invalid and the  dev ice order has been rejected. The Office  Key must be numeric  and less than 10 digits."
+error_code_247,210,"Gateway Boarding Failed","Indicates that the account failed to board on the  gateway"
+error_code_248,211,"Invalid SoundPayment Dev ice Request Format","Indicates that the sign up request with Sound  Payment(s) is in Invalid format"
+error_code_249,212,"PostbackUrl Too Long Or Empty","Indicates that PostbackUrl is too long."
+error_code_250,213,"SoundPayments Not Equal With Dev ices","Indicates that number of sound payments and dev ice  is not equal."
+error_code_251,215,"Partial Success, TransItViaExpress Boarding Failed","Indicates the signup was successful  but ExpressBoarding  is Failed (can be wrong zip, missing owner name, request already in process)"
+error_code_252,220,"Invalid Global Transaction ID","The Global Transaction Id for NON-USD DTE call is  Invalid"
+error_code_253,221,"ACH Decline","ACH Risk Decline:  A payment cannot be taken from  this bank account as it has been flagged  as high risk. Please use a different  payment method."
+error_code_254,222,"Invalid Business Type","The business type is Invalid"
+error_code_255,223,"Dev ices Payment Failed","Transaction 430 dev ices payment failed"
+error_code_256,224,"Gateway Transaction Id Too Long","the gateway transaction ID was too long"
+error_code_257,225,"Global Transaction Id Too Long","The global transaction ID is too long"
+error_code_258,226,"Card Brand Transaction Id Too Long","The card brand transaction ID was too long"
+error_code_259,227,"Global Transaction Source Too Long","The Global Transaction Source was too long"
+error_code_260,228,"Ambiguous  Transaction ID’s Provided","This message  indicates that more than 1 of the possible  3 transaction identifiers  are present in the request (TransNum, gatewayTransactionId, or combo  of globaltransId and globalTransSource).  Only 1 is allowed."
+error_code_261,229,"None of the Transaction ID’s Provided","This message  indicates that none of the possible  3  transaction identifiers  are present in the request (TransNum, gatewayTransactionId, or combo  of  globaltransId and globalTransSource)..  One of the 3 is required"
+error_code_262,230,"Invalid GlobalTransSource","When the globaltransId is passed, the  globalTransSource  field is required."
+error_code_263,231,"Invalid Attept Number","The transaction number is Invalid"
+error_code_264,232,"Invalid Terms Acceptance  IP","The terms  acceptance IP address was Invalid or  incorrect"
+error_code_265,233,"Invalid Terms Version","The submitted terms version is Invalid or incorrect"
+error_code_266,235,"Previous Address  Incomplete","Returned when the time at current address is less than  24 months and any of the Mandatory Previous address fields  are missing  a value. For the UK, specific  Previous address fields are mandatory."
+error_code_267,236,"Time At Address  is required","Returned when the time at current address field is null  (blank) against a merchant where this information  is required. For the UK, the merchant must specify  the amount of time at the current address."
+error_code_268,237,"Invalid District","The district exceeds the allowable length in the  personal, business, mailing,  or beneficiary  owner address."
+error_code_269,238,"State does not apply for the giv en country","Returned if the state field is used in the Transaction  Type ""01"" API call to ProPay for a country where a 2 - 3 digit ""state"" abbreviation is not applicable."
+error_code_270,239,"Invalid Previous Address","Returned when the time at current address is less than  24 months and any of the mandatory Previous address fields  exceeds their allowable character length. For the  UK, specific  Previous address fields  are mandatory."
+error_code_271,240,"Invalid Business Registration Number","The UK merchant business type is Limited Company  (""D"")  and the business registration  number is null (blank) or exceeds the allowable length."
+error_code_272,241,"Invalid County or Post Town","The value is null (blank) for  County and/or PostTown or  exceeds the allowable length within the personal, business, mailing,  or beneficiary owner addresses."
+error_code_273,242,"Invalid Address Id","The address id exceeds the allowable length. This API  response  only applies if you are doing an Address Lookup (Equifax)."
+error_code_274,243,"Invalid business Phone Number","The business phone number exceeds the allowable  length or is null (blank)."
+error_code_275,244,"Invalid Building Number","The building / home number for the street address  exceeds the allowable length or is null (blank) against a merchant where this information  is required."
+error_code_276,245,"Invalid Nationality","Returned when the Nationality tag is missing  (null)  against a merchant where this information  is required, when the length exceeds the allowable 3 digit ISO 3166 standard, or when a value other than the ISO 3166 standard is used (i.e.  ""GB"" when it should be ""GBR"")."
+error_code_277,246,"Dev ice order failed","One or more  dev ices in this request is/are configured  improperly  for this account. Dev ices in this order do not have the same account type or tip method.  Cannot order a peripheral without a dev ice."
+error_code_278,A1,"POS dev ice authentication successful","Rare approval code  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute determination of transaction state.**"
+error_code_279,A2,"POS dev ice authentication unsuccessful",
+error_code_280,A3,"POS dev ice deactivation successful","Rare approval code  ** Note: With ProPay, this response  will be treated as a decline and ProPay will NOT settle this transaction to the merchant.  With some processors,  including some  card-present solutions  that connect to ProPay, these can be approved.  Use <status> for absolute determination of transaction state.**"
+error_code_281,B1,"Surcharge not permitted","Surcharge not permitted on EBT food stamp card"
+error_code_282,B2,"Surcharge not permitted","Surcharge not supported by issuer  of this card"
+error_code_283,CA,"AVS  Referral",
+error_code_284,CV,"Card type verification error",
+error_code_285,E1,"Encryption not configured",
+error_code_286,E2,"Terminal not authenticated",
+error_code_287,E3,"Data could not be decrypted",
+error_code_288,EA,"Account  Length Error",
+error_code_289,EB,"Check digit error",
+error_code_290,EC,"CID Format  error",
+error_code_291,FR,"Fraud","Transaction declined because possible fraud was detected by  Heartland"
+error_code_292,HV,"Failure HV","Merchant boarding configuration  error"
+error_code_293,N0,"Force  STIP",
+error_code_294,N3,"Cash serv ice not available",
+error_code_295,N4,Cash request exceeds issuer or approved  limit,
+error_code_296,N5,"Ineligible for  resubmission",
+error_code_297,N7,"Decline  for CVV2  failure",
+error_code_298,N8,Transaction amount exceeds preauthorized  approval amount,
+error_code_299,PD,"Parameter Download","MV PDL system response.  Response text indicates EMV PDL status  code"
+error_code_300,Q1,"Card Authentication failed",
+error_code_301,R0,"Stop Payment Order",
+error_code_302,R1,"Rev oke Auth","Rev oke authorization for further  payments"
+error_code_303,R3,"Cancel Payment","Cancel all recurring  payments for the card number in the request"
+error_code_304,,"include a repeat of the auth code, the original  AVS  response,  and the original  CVV response.)","details include a repeat of the auth code, the original  AVS  response,  and the original  CVV response.)""

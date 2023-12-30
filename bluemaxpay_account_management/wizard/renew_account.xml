@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="renew_account_form_view" model="ir.ui.view">
+            <field name="name">Renew Account</field>
+            <field name="model">renew.account</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="tier"/>
+                                <field name="cc_num"/>
+                            </group>
+                            <group>
+                                <field name="exp_date"/>
+                                <field name="cvv2"/>
+                                <field name="account_number" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                    <footer>
+                        <button string="Save" name="renew_account" type="object" class="btn-primary" data-hotkey="q"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_renew_account" model="ir.actions.act_window">
+            <field name="name">Renew Account</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">renew.account</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="single_sign_on_form" model="ir.ui.view">
+            <field name="name">Account Management</field>
+            <field name="model">single.sign.on</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="alert alert-warning mb-2 text-center" role="alert">
+                        IP Address: <field name="ip_address" nolabel="1" readonly="1"/>
+                    </div>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="user_id" invisible="1"/>
+                                <field name="ip_subnet_mask" invisible="1"/>
+                                <field name="page_id"/>
+                                <field name="page" invisible="1"/>
+                                <field name="report" invisible="is_report != True" />
+                            </group>
+                            <group>
+                                <field name="ip_address" invisible="1"/>
+                                <field name="is_report"/>
+                                <field name="transaction_number" invisible="is_report != True" />
+                                <field name="url" invisible="1"/>
+                            </group>
+                            <field name="embed_code"/>
+                        </group>
+                    </sheet>
+                <footer>
+<!--                    <button string="Save" name="single_sign_on_token" type="object" class="btn-primary" data-hotkey="q"/>-->
+<!--                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>-->
+                </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_single_sign_on" model="ir.actions.act_window">
+            <field name="name">Account Management</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">single.sign.on</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>

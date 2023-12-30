@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="merchant_account_details_form_view" model="ir.ui.view">
+            <field name="name">Merchant Account</field>
+            <field name="model">propay.account.address</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="first_name"/>
+                                <field name="initial"/>
+                                <field name="even_phone"/>
+                            </group>
+                            <group>
+                                <field name="last_name"/>
+                                <field name="day_phone"/>
+                                <field name="email"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                <footer>
+                    <button string="Save" name="change_merchant_account" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_merchant_account_details" model="ir.actions.act_window">
+            <field name="name">Merchant Account</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">propay.account.address</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record id="merchant_bank_account_form_view" model="ir.ui.view">
+            <field name="name">Merchant Bank Account</field>
+            <field name="model">propay.bank.account</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="account_country_code"/>
+                                <field name="bank_account_number"/>
+                                <field name="routing_number"/>
+                            </group>
+                            <group>
+                                <field name="account_ownership_type"/>
+                                <field name="bank_name"/>
+                                <field name="account_type"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                <footer>
+                    <button string="Save" name="check_bank_account" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_merchant_bank_account" model="ir.actions.act_window">
+            <field name="name">Merchant Bank Account</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">propay.bank.account</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record id="beneficial_data_form_view" model="ir.ui.view">
+            <field name="name">Beneficial Data</field>
+            <field name="model">beneficial.data</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                    <group>
+                        <group>
+                            <field name="user_id" invisible="1"/>
+                            <field name="first_name"/>
+                            <field name="title"/>
+                            <field name="ssn"/>
+                            <field name="country_id"/>
+                            <field name="city"/>
+                            <field name="date_of_birth"/>
+                        </group>
+                        <group>
+                            <field name="last_name"/>
+                            <field name="percentage"/>
+                            <field name="address"/>
+                            <field name="state_id"/>
+                            <field name="zip"/>
+                            <field name="email"/>
+                        </group>
+                    </group>
+                    </sheet>
+                <footer>
+                    <button string="Save" name="add_beneficial_data" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_beneficial_data" model="ir.actions.act_window">
+            <field name="name">Beneficial Data</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">beneficial.data</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>

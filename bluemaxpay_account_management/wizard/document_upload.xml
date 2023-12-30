@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="document_upload_transaction_type_form_view" model="ir.ui.view">
+            <field name="name">Document Upload</field>
+            <field name="model">document.upload</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                    <group>
+                        <group>
+                            <field name="account_number" invisible="1"/>
+                            <field name="document_name"/>
+                            <field name="doc_category"/>
+                        </group>
+                        <group>
+                            <field name="document"/>
+                            <field name="doc_type"/>
+                        </group>
+                    </group>
+                    </sheet>
+
+                <footer>
+                    <button string="Save" name="upload_document_propay" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_upload_document_transaction_type" model="ir.actions.act_window">
+            <field name="name">Upload Document</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">document.upload</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>

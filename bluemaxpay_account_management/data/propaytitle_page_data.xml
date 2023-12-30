@@ -1,0 +1,22 @@
+<odoo>
+    <record id="propaytitle_page_data_1" model="propaytitle.page">
+        <field name="display_name">Owner</field>
+        <field name="propay_title">Owner</field>
+    </record>
+    <record id="propaytitle_page_data_2" model="propaytitle.page">
+        <field name="display_name">CEO</field>
+        <field name="propay_title">CEO</field>
+    </record>
+    <record id="propaytitle_page_data_3" model="propaytitle.page">
+        <field name="display_name">President</field>
+        <field name="propay_title">President</field>
+    </record>
+    <record id="propaytitle_page_data_4" model="propaytitle.page">
+        <field name="display_name">Manager</field>
+        <field name="propay_title">Manager</field>
+    </record>
+    <record id="propaytitle_page_data_5" model="propaytitle.page">
+        <field name="display_name">Executive</field>
+        <field name="propay_title">Executive</field>
+    </record>
+</odoo>
